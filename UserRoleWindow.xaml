@@ -1,0 +1,33 @@
+﻿<Window x:Class="PRAKTIK5.UserRoleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRAKTIK5"
+        mc:Ignorable="d"
+        Title="UserRoleWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Компьютеры" Width="200">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="CompInfo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,209"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Еда" Width="200">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="FoodInfo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,209"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="События" Width="200">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="EventsInfo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,209"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Тарифы" Width="200">
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="RatesInfo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,209"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
